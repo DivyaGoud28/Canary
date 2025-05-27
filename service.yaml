@@ -3,7 +3,10 @@ kind: Service
 metadata:
   name: my-app
   namespace: default
+  annotations:
+    cloud.google.com/neg: '{"ingress": true}'
 spec:
+  type: LoadBalancer
   selector:
     app: my-app
   ports:
