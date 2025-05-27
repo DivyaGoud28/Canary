@@ -22,6 +22,6 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: nginxdemos/hello:plain-text
+          image: sukanya996/bule-green:blue-47
           ports:
             - containerPort: 80
