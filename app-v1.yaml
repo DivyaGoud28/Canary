@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: my-app-v1
   namespace: default
+  annotations:
+    harness.io/direct-apply: "true"
   labels:
     app: my-app
     version: v1
